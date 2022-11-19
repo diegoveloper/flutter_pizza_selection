@@ -11,7 +11,7 @@ void main() {
   runApp(const MyApp());
 }
 
-const _pizzaMovementDuration = Duration(milliseconds: 1900);
+const _pizzaMovementDuration = Duration(milliseconds: 1600);
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -130,7 +130,7 @@ class _HomeWidgetState extends State<HomeWidget> {
 
                           return Opacity(
                             opacity:
-                                opacity < 0.3 ? 0.0 : opacity.clamp(0.0, 1.0),
+                                opacity < 0.35 ? 0.0 : opacity.clamp(0.0, 1.0),
                             child: Transform(
                               alignment: Alignment.center,
                               transform: Matrix4.identity()
@@ -302,9 +302,9 @@ class CircularPizza extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.black26,
-            blurRadius: 10,
-            spreadRadius: 2,
-            offset: Offset(5, 5),
+            blurRadius: 15,
+            spreadRadius: 1,
+            offset: Offset(3, 3),
           )
         ],
       ),
